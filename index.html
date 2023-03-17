@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Urgências</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    
+</head>
+<body>
+
+    <header id="cabecalho">
+        
+        <img src="./img/logo-ihef-branco.png" alt="logo-ihef" id="logo-ihef"> 
+
+        <h1 id="titulo">Exames Urgentes</h1>   
+
+        <div id="listas">
+            <ul>
+                <li>Ressonância Magnética</li>
+                <li>Tomografia Computadorizada</li>
+                <li>Tomografia Dental</li>
+                <li>Raio X Digital</li>
+            </ul>
+            <ul>
+                <li>Mamografia Digital</li>
+                <li>Densitometria Óssea</li>
+                <li>Ultrassonografia</li>
+                <li>Punção de Biópsia</li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section id="container">
+
+        <div class="tag">
+            <label class="preenchimento" for="id">ID:</label>
+            <textarea name="id" class="campos identificacao" cols="10" rows="1"></textarea>
+            <label class="preenchimento" for="nome">Nome:</label>
+            <textarea name="nome" class="campos nome" cols="35" rows="1"></textarea>
+            <label class="preenchimento" for="mod">Mod:</label>
+            <select name="modalidades" class="campos modalidade">
+                <option value="rm">RM</option>
+                <option value="tc">TC</option>
+                <option value="rx">RX</option>
+            </select>
+            <label class="preenchimento" for="data">Data:</label>
+            <input class="campos" type="date">
+
+            <label for="urg">Motivo:</label>
+            <select class="campos" name="status">
+                <option value="urg">URG</option>
+                <option value="hosp">HOSP</option>
+                <option value="conc">Concurso</option>
+            </select>    
+
+            <label for="status">Status:</label>
+            <select class="campos" name="status">
+                <option value="aberto">Aberto</option>
+                <option value="atribuido">Atribuído</option>
+                <option value="liberado">Liberado</option>
+            </select>
+
+            <label for="">Observações:</label>
+            <textarea name="observacoes" class="campos preenchimento" cols="40" rows="1"></textarea>
+            
+            <button class="botao" type="button">
+                    <img src="./img/lixeira.png" alt="lixeira" class="lixeira">
+            </button>
+        </div>
+
+    </section>
+
+    <footer>
+        <button id="botao-adicionar">+</button>
+    </footer>
+
+</body>
+</html>

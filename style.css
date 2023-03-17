@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+@font-face {
+    font-family: 'Sergoe';
+    src: url('./fonts/Sergoe UI.woff');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Sergoe', sans-serif;
+    
+}
+
+body {
+    background-color: black;
+    background-image: url(./img/wallpaper.jpg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14%;
+    margin: 10px;
+    width: 100%;
+    justify-content: center;       
+}
+
+#logo-ihef {
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 200px;
+}
+
+#titulo {
+    font-size: 50px;
+    align-items: center;
+    color: white;
+
+}
+
+#listas {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: white;
+    font-size: 13px;
+}
+
+.campos {
+    background-color: black;
+    color: white;
+}
+
+
+
+.tag {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+}
+
+
+.botao {
+    flex: 1;
+    background-color: #680000;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all 0.3s;    
+}
+
+#botao:hover {
+    background-color: #a70404;
+}
+
+.lixeira {
+    max-width: 15px;
+    margin-top: 2px;
+    
+    
+}
+
+#botao-adicionar {
+    background-color: #013808;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 1.2em ;
+    border: 2px solid white;
+    transition: all 0.3s;
+    position: absolute;
+    top: 93%;
+    left: 97%;
+}
+
+#botao-adicionar:hover {
+    background-color: #027912;    
+}
+
+.campos{
+    padding: 1px;
+}
