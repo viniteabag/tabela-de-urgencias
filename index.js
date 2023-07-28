@@ -17,13 +17,18 @@ function escutarLixeira(tagPai){
     })
 }
 
+
 function saveData(){
-    
+    const meuTextarea = document.getElementsByClassName("campos identificacao");
+    const valorTextarea = meuTextarea.value;
+    alert(valorTextarea)
 }
 
-function loadData(){
 
+function loadData(){
 }
 
 botaoAdicionar.addEventListener('click', adicionarTag);
 escutarLixeira(tag);
+
+

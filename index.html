@@ -7,6 +7,8 @@
     <title>Tabela de Urgências</title>
     <link rel="stylesheet" href="style.css">
     <script src="./index.js" defer></script>
+    <script src="./estilo.js" defer></script>
+    <link rel="shortcut icon" href="./img/favicon-akatsuki.png" type="image/x-icon">
     
 </head>
 <body>
@@ -36,6 +38,14 @@
 
     <section id="container">
 
+        <div class="barra-de-ferramentas">
+
+            <button id="botao-adicionar">+</button>
+            <button id="botao-adicionar" onclick="saveData()"><img id="disquete" src="./img/save.png" alt=""></button>
+                
+            </button>
+        </div>
+
         <div class="tag">
             <label class="preenchimento" for="id">ID:</label>
             <textarea name="id" class="campos identificacao" cols="10" rows="1"></textarea>
@@ -48,7 +58,7 @@
                 <option value="rx">RX</option>
             </select>
             <label class="preenchimento" for="data">Data:</label>
-            <input class="campos" type="date">
+            <input class="campos icone-calendario" type="date">
 
             <label for="urg">Motivo:</label>
             <select class="campos" name="status">
@@ -75,7 +85,7 @@
     </section>
 
     <footer>
-        <button id="botao-adicionar">+</button>
+       
     </footer>
 
 </body>
