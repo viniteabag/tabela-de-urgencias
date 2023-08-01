@@ -13,7 +13,7 @@ function adicionarTag() {
 function escutarLixeira(tagPai){
     const lixeira = tagPai.querySelector('.lixeira');
     lixeira.addEventListener('click', () => {
-        tagPai.remove()
+        tagPai.remove() 
     })
 }
 
